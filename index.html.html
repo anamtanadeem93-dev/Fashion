@@ -1,0 +1,1852 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <title>Veloura</title>
+</head>
+<style>
+    
+    *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+}
+
+body{
+    background:#e9e9e9;
+}
+header{
+     width:95%;
+    height:600px;
+    margin:40px auto;
+    background:#f5f5f5;
+    border-radius:20px;
+    position:relative;
+    overflow:hidden;
+}
+header img{
+        
+        margin-top: -50px;
+        margin-left: 30px;
+        width: 200px;
+        height: 200px;
+    }
+    header input{
+        position: absolute;
+    top: 40px;      
+    right: 200px;    
+    width: 200px;
+    height: 30px;
+    border-radius: 20px;
+    padding-left: 20px;
+    }
+
+.nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 40px;
+    margin-left: -50px;
+}
+
+.menu{
+    display:flex;
+    gap:50px;
+    font-size:12px;
+    letter-spacing:3px;
+    margin-top: -250px;
+    margin-left: 400px;
+}
+
+.menu a{
+    text-decoration:none;
+    color:black;
+}
+    header p{
+        position: absolute;
+    top: 200px;
+    left: 7%;
+    text-align: center;
+    color: #1c1c1c;
+    font-size: 35px;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    letter-spacing: 7px;
+    }
+    section img{
+         position: absolute;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 500px;
+    height: auto;
+    z-index: 2;     
+    }
+.search-box{
+    position: absolute;
+    top: 40px;
+    right: 150px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.square{
+    width:350px;
+    height:350px;
+    background:#e0e0e0;
+    position:absolute;
+    top:65%;
+    left:50%;
+    transform:translate(-50%,-50%);
+}
+.model{
+    position:absolute;
+    bottom:0;
+    left:50%;
+    transform:translateX(-50%);
+    height:520px;
+}
+.look{
+    color: black;
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+
+}
+.look p{
+    font-size: 15px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-style: italic;
+    margin-left: -450px;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.3;
+}
+ .search-box input{
+    width: 180px;
+    padding: 10px 12px;
+    border: none;
+    background: transparent;
+    color: black;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    margin-top: -45px;
+    left: -400%;
+     border-bottom: 2px solid #999;
+} 
+.search-box input{
+    border: none;
+    border-bottom: 2px solid #999;
+    background: transparent;
+}
+
+.search-box input:focus{
+    border-bottom: 2px solid black;
+    background: transparent;
+    border: none;
+}
+.search-box i{
+    font-size: 18px;
+    cursor: pointer;
+}
+.brand{
+    position: absolute;
+    top: 135%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+}
+.double-heading{
+    top: 140%;
+    left: 35%;
+    font-size: 60px;
+    font-weight: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    position: absolute;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.heading{
+    color: black;
+    position: absolute;
+    top: 155%;
+    left: 800px;
+    transform: translate(-50%, -50%);
+    font-size: 57px;
+    letter-spacing: 3px;
+    font-weight: 500;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.img1{
+    position: absolute;
+    top: 150%;
+    left: 1130px;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    height: auto;
+    filter: drop-shadow(0px 10px 5px rgba(0,0,0,0.4));
+}
+.para{
+    position: absolute;
+    top: 180%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    font-size: 13px;
+    letter-spacing: 1px;
+   
+    margin-left: -450px;
+    font-family: 'Poppins', sans-serif;
+}
+.middle-line{
+    position: absolute;
+    top: 200%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.middle-line h1{
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.middle-line .p1{
+    color: white;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 30%;
+}
+.middle-line .p2{
+    color: white;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 26.5%;
+    top: 15px;
+}
+.middle-line .pp3{
+    color: white;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 63%;
+    top: 0px;
+}
+.middle-line .p4{
+    color: white;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 63%;
+    top: 15px;
+}
+.square2{
+    width:350px;
+    height:400px;
+    background:#b8ab9aa8;
+    position:absolute;
+    top:270%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    border: none;
+}
+.model2{
+    position:absolute;
+    top: 220%;
+    left:50%;
+    transform:translateX(-50%);
+    height:520px;
+}
+.about{
+    position: absolute;
+    top: 250%;
+    left: 32%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+} 
+.us{
+    position: absolute;
+    top: 270%;
+    left: 1050px;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.us h1{
+    color: black;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.us p{
+    color: black;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    font-size: 12px;
+    font-weight: 200;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+}
+
+.us .para2{
+    margin-top: 20px;
+}
+
+.brand-heading .h12{
+    position: absolute;
+    top: 330%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.outline-text{
+    font-size: 60px;
+    font-weight: italic;
+    color: transparent;
+    -webkit-text-stroke: 1px black;
+    position: absolute;
+    top: 335%;
+    left: 35%;
+    letter-spacing: 3px;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    
+}
+.h14{
+    position: absolute;
+    top: 350%;
+    left: 65%;
+    transform: translate(-50%, -50%);
+    font-size: 60px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+}
+.sneaker-sec{
+    position: absolute;
+    width: 100%;
+    height: 500px;
+    margin-top: 1900px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sneaker-left img{
+    width: 400px;
+    padding: -10px 15px;
+    margin-left: -200px;
+    
+}
+
+.sneaker-right{
+    position: absolute;
+    right: 150px;
+    bottom: 310px;
+}
+
+.sneaker-right img{
+    width: 200px;
+    padding: 15px;
+    margin-left: -300px;
+}
+
+
+.sneaker-text{
+    position: absolute;
+    margin-left: -200px;
+    margin-top: -200px;
+    color:black;
+    z-index: 2;
+    transform: translateX(20%);
+}
+
+.sneaker-text h2{
+    font-family:'Playfair Display',serif;
+    font-size:20px;
+    font-style: italic;
+    letter-spacing:1px;
+     transform: translateX(20%);
+    z-index: 2;
+}
+
+.sneaker-text p{
+    font-family:'Arial',sans-serif;
+    font-size:14px;
+    font-style: italic;
+    margin-top:10px;
+     transform: translateX(20%);
+    z-index: 2;
+}
+.sneaker-sec button{
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px 30px;
+    background:black;
+    border:none;
+    color:white;
+    font-family: 'Playfair Display', serif;
+    font-style: italic;
+    cursor:pointer;
+    clip-path: polygon(10% 0,100% 0,90% 100%,0% 100%);
+}
+.middle-line2{
+    position: absolute;
+    top: 380%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 50px;
+    background: black;
+}
+.middle-line2 h1{
+    color: white;
+    line-height: 50px;
+    font-size: 20px;
+    letter-spacing: 2px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+.middle-line2 .p1{
+    color: white;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 30%;
+}
+.middle-line2 .p2{
+    color: white;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 26.5%;
+    top: 15px;
+}
+.middle-line2 .pp3{
+    color: white;
+    line-height: 30px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 63%;
+    top: 0px;
+}
+.middle-line2 .p4{
+    color: white;
+    line-height: 40px;
+    font-size: 12px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    position: absolute;
+    left: 63%;
+    top: 15px;
+}
+.newsletter-section{
+    background: url('images/newsletter.jpg');
+    display: flex;
+    padding: 80px 20px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    margin: 60px auto;
+    max-width: 1200px;
+    margin-top: 2600px;
+    height: 300px;
+}
+.newsletter-section::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 0;
+}
+.newsletter-container{
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+}
+
+.newsletter-container h2{
+    font-size: 32px;
+    margin-bottom: 50px;
+    color: #fff;
+    font-family:'Playfair Display',serif;
+    font-style: italic;
+}
+
+.newsletter-container p{
+    font-size: 14px;
+    margin-bottom: 30px;
+    margin-left: 20px;
+    font-style: italic;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.newsletter-form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input{
+    padding: 12px 15px;
+    outline: none;
+    border: none;
+    flex: 1;
+    min-width: 250px;
+
+}
+
+.newsletter-form button{
+    padding: 12px 20px;
+    border: none;
+    background:black;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    font-style: italic;
+    font-family: 'Playfair Display', serif;
+    clip-path: polygon(10% 0,100% 0,90% 100%,0% 100%);
+}
+section .insta{
+    position: absolute;
+    top: 570%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    
+}
+section .insta h1{
+    font-size: 35px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-left: 50px
+}
+section .insta .bran{
+    font-size: 35px;
+    letter-spacing: 1px;
+    font-weight: 100;
+    font-style: italic;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin-left: 100px;
+}
+.blog{
+    position: absolute;
+    top: 600%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    gap: 20px;
+}
+.blog div img{
+    width: 200px;
+    height: 200px;
+    border-radius: 12px;
+    object-fit: cover;
+}
+
+.footer{
+    margin-top: 50px;
+     background:#f2f2f2;
+  padding:50px 80px 0;
+  cursor: pointer;
+}
+
+.footer-container{
+  display:flex;
+  justify-content:space-between;
+  flex-wrap:wrap;
+}
+
+.footer-box{
+  width:18%;
+  min-width:180px;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+
+}
+
+.footer-box h2{
+  font-size:30px;
+  position: relative;
+  font-family: 'Playfair Display', serif;
+    font-style: italic;
+}
+
+.footer-box h3{
+  margin-bottom:15px;
+  margin-left: -40px;
+}
+
+.footer-box ul{
+  list-style:none;
+}
+
+.footer-box ul li{
+  margin-bottom:8px;
+  color:#555;
+  margin-left: -40px;
+}
+
+.footer-box p{
+  margin-bottom:10px;
+  color:#555;
+  margin-left: -60px;
+}
+
+.footer-box i{
+  margin-right: 8px;
+}
+
+.social i{
+  background:black;
+  color:white;
+  padding:8px;
+  border-radius:50%;
+  font-size:16px;
+  margin-left: -10px;
+  cursor:pointer;
+}
+
+/* Bottom */
+.footer-bottom{
+  margin-top:40px;
+  padding:15px 0;
+  border-top:1px solid #ccc;
+  display:flex;
+  justify-content:space-between;
+  font-size:12px;
+  color:#555;
+}
+
+.footer-bottom .links span{
+  margin-left:15px;
+  cursor:pointer;
+}
+/* =========================================================
+   RESPONSIVE DESIGN
+   Original HTML + JavaScript remain unchanged
+   ========================================================= */
+
+
+/* =========================
+   LARGE TABLET / LAPTOP
+   ========================= */
+
+@media (max-width: 1200px){
+
+    header{
+        width:94%;
+        height:560px;
+    }
+
+    header img{
+        width:170px;
+        height:170px;
+        margin-left:20px;
+    }
+
+    .menu{
+        gap:30px;
+        margin-left:300px;
+    }
+
+    .search-box{
+        right:70px;
+    }
+
+    .model{
+        height:480px;
+    }
+
+    .look{
+        left:38%;
+    }
+
+    .look p{
+        margin-left:-300px;
+    }
+
+    .brand{
+        font-size:50px;
+    }
+
+    .double-heading{
+        font-size:50px;
+    }
+
+    .heading{
+        left:65%;
+        font-size:48px;
+    }
+
+    .img1{
+        left:82%;
+        width:340px;
+    }
+
+    .para{
+        left:75%;
+        margin-left:-350px;
+    }
+
+    .about{
+        left:25%;
+    }
+
+    .us{
+        left:78%;
+    }
+
+    .h12,
+    .outline-text{
+        font-size:50px !important;
+    }
+
+    .h14{
+        font-size:50px;
+    }
+
+    .sneaker-left img{
+        width:350px;
+    }
+
+    .sneaker-right{
+        right:80px;
+    }
+
+    .sneaker-text{
+        margin-left:-100px;
+    }
+
+    .newsletter-section{
+        max-width:90%;
+    }
+
+    .footer{
+        padding-left:40px;
+        padding-right:40px;
+    }
+}
+
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 900px){
+
+    header{
+        width:94%;
+        height:520px;
+        margin:25px auto;
+    }
+
+    header img{
+        width:150px;
+        height:150px;
+        margin-top:-35px;
+        margin-left:10px;
+    }
+
+    .nav{
+        padding:15px 20px;
+    }
+
+    .menu{
+        gap:25px;
+        font-size:11px;
+        margin-left:220px;
+        margin-top:-200px;
+    }
+
+    .search-box{
+        top:35px;
+        right:35px;
+        gap:8px;
+    }
+
+    .search-box input{
+        width:140px;
+    }
+
+    header p{
+        top:170px;
+        left:5%;
+        font-size:28px;
+        letter-spacing:5px;
+    }
+
+    .model{
+        height:430px;
+    }
+
+    .square{
+        width:300px;
+        height:300px;
+    }
+
+    .look{
+        left:32%;
+    }
+
+    .look p{
+        margin-left:-200px;
+        font-size:13px;
+    }
+
+    .brand{
+        font-size:42px;
+        left:35%;
+    }
+
+    .double-heading{
+        font-size:42px;
+        left:30%;
+    }
+
+    .heading{
+        font-size:40px;
+        left:67%;
+    }
+
+    .img1{
+        width:280px;
+        left:82%;
+    }
+
+    .para{
+        font-size:11px;
+        left:72%;
+        margin-left:-250px;
+    }
+
+    .middle-line,
+    .middle-line2{
+        height:50px;
+    }
+
+    .middle-line h1,
+    .middle-line2 h1{
+        font-size:16px;
+    }
+
+    .middle-line .p1,
+    .middle-line2 .p1{
+        left:20%;
+        font-size:10px;
+    }
+
+    .middle-line .p2,
+    .middle-line2 .p2{
+        left:15%;
+        font-size:10px;
+    }
+
+    .middle-line .pp3,
+    .middle-line2 .pp3{
+        left:65%;
+        font-size:10px;
+    }
+
+    .middle-line .p4,
+    .middle-line2 .p4{
+        left:65%;
+        font-size:10px;
+    }
+
+    .square2{
+        width:280px;
+        height:350px;
+    }
+
+    .model2{
+        height:430px;
+    }
+
+    .about{
+        font-size:25px;
+        left:25%;
+    }
+
+    .us{
+        left:76%;
+    }
+
+    .us h1{
+        font-size:18px;
+    }
+
+    .us p{
+        font-size:10px;
+    }
+
+    .brand-heading .h12{
+        font-size:45px;
+    }
+
+    .outline-text{
+        font-size:45px;
+    }
+
+    .h14{
+        font-size:45px;
+    }
+
+    .sneaker-sec{
+        height:450px;
+    }
+
+    .sneaker-left img{
+        width:300px;
+        margin-left:-120px;
+    }
+
+    .sneaker-right{
+        right:50px;
+        bottom:280px;
+    }
+
+    .sneaker-right img{
+        width:160px;
+        margin-left:-180px;
+    }
+
+    .sneaker-text{
+        margin-left:-80px;
+        margin-top:-160px;
+    }
+
+    .sneaker-text h2{
+        font-size:17px;
+    }
+
+    .sneaker-text p{
+        font-size:11px;
+    }
+
+    .newsletter-section{
+        max-width:90%;
+        height:280px;
+    }
+
+    .newsletter-container h2{
+        font-size:27px;
+        margin-bottom:30px;
+    }
+
+    section .insta h1,
+    section .insta .bran{
+        font-size:28px;
+    }
+
+    .blog{
+        gap:12px;
+    }
+
+    .blog div img{
+        width:160px;
+        height:160px;
+    }
+
+    .footer{
+        padding:40px 30px 0;
+    }
+
+    .footer-box{
+        width:30%;
+        margin-bottom:30px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media (max-width: 600px){
+
+    body{
+        overflow-x:hidden;
+    }
+
+
+    /* ================= HEADER ================= */
+
+    header{
+        width:94%;
+        height:500px;
+        margin:15px auto;
+        border-radius:15px;
+    }
+
+    header img{
+        width:120px;
+        height:120px;
+        margin-top:-25px;
+        margin-left:5px;
+    }
+
+    .nav{
+        display:block;
+        padding:0;
+    }
+
+    .menu{
+        position:absolute;
+        top:125px;
+        left:50%;
+        transform:translateX(-50%);
+        margin:0;
+        width:90%;
+        justify-content:center;
+        gap:15px;
+        font-size:9px;
+        letter-spacing:1.5px;
+    }
+
+    .search-box{
+        top:75px;
+        right:50%;
+        transform:translateX(50%);
+        width:85%;
+        justify-content:center;
+    }
+
+    .search-box input{
+        width:170px;
+        margin-top:0;
+        left:auto;
+        padding:7px 8px;
+    }
+
+    .search-box i{
+        font-size:15px;
+    }
+
+    header p{
+        top:175px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        font-size:24px;
+        letter-spacing:4px;
+        line-height:1.5;
+    }
+
+    .square{
+        width:230px;
+        height:230px;
+        top:405px;
+    }
+
+    .model{
+        height:310px;
+        bottom:0;
+        max-width:90%;
+        object-fit:contain;
+    }
+
+    .look{
+        top:520px;
+        left:50%;
+        width:90%;
+        transform:translateX(-50%);
+        text-align:center;
+    }
+
+    .look p{
+        margin:0;
+        font-size:11px;
+        letter-spacing:1px;
+    }
+
+
+    /* ================= FIRST BRAND SECTION ================= */
+
+    .brand{
+        top:650px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+        font-size:29px;
+        letter-spacing:2px;
+    }
+
+    .double-heading{
+        top:720px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+        font-size:30px;
+        letter-spacing:2px;
+    }
+
+    .heading{
+        top:800px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+        font-size:28px;
+        letter-spacing:2px;
+    }
+
+    .img1{
+        top:930px;
+        left:50%;
+        transform:translateX(-50%);
+        width:250px;
+        max-width:80%;
+    }
+
+    .para{
+        top:1100px;
+        left:50%;
+        transform:translateX(-50%);
+        width:85%;
+        margin:0;
+        text-align:center;
+        font-size:10px;
+        line-height:1.7;
+    }
+
+
+    /* ================= BLACK LINE ================= */
+
+    .middle-line{
+        top:1200px;
+        height:75px;
+    }
+
+    .middle-line h1{
+        line-height:75px;
+        font-size:14px;
+        letter-spacing:1px;
+    }
+
+    .middle-line .p1,
+    .middle-line .p2,
+    .middle-line .pp3,
+    .middle-line .p4{
+        display:none;
+    }
+
+
+    /* ================= ABOUT SECTION ================= */
+
+    .square2{
+        top:1450px;
+        left:50%;
+        width:240px;
+        height:300px;
+    }
+
+    .model2{
+        top:1320px;
+        left:50%;
+        height:350px;
+        max-width:90%;
+        object-fit:contain;
+    }
+
+    .about{
+        top:1700px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+        font-size:25px;
+        line-height:1.4;
+    }
+
+    .us{
+        top:1880px;
+        left:50%;
+        transform:translateX(-50%);
+        width:85%;
+        text-align:center;
+    }
+
+    .us h1{
+        font-size:18px;
+    }
+
+    .us p{
+        font-size:10px;
+        line-height:1.7;
+        margin-top:15px;
+    }
+
+    .us .para2{
+        margin-top:15px;
+    }
+
+
+    /* ================= BRAND HEADING ================= */
+
+    .brand-heading .h12{
+        top:2150px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+        font-size:30px;
+        letter-spacing:2px;
+    }
+
+    .outline-text{
+        top:2200px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+        font-size:30px;
+        letter-spacing:2px;
+    }
+
+    .h14{
+        top:2260px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+        font-size:30px;
+        letter-spacing:2px;
+    }
+
+
+    /* ================= SNEAKER SECTION ================= */
+
+    .sneaker-sec{
+        position:absolute;
+        top:2320px;
+        left:0;
+        margin-top:0;
+        width:100%;
+        height:500px;
+        display:block;
+    }
+
+    .sneaker-left{
+        position:absolute;
+        top:0;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+    }
+
+    .sneaker-left img{
+        width:280px;
+        max-width:80%;
+        margin:0;
+        padding:0;
+    }
+
+    .sneaker-text{
+        position:absolute;
+        top:280px;
+        left:50%;
+        transform:translateX(-50%);
+        width:90%;
+        margin:0;
+        text-align:center;
+    }
+
+    .sneaker-text h2{
+        font-size:17px;
+        transform:none;
+        letter-spacing:1px;
+    }
+
+    .sneaker-text p{
+        font-size:10px;
+        margin-top:10px;
+        transform:none;
+        line-height:1.5;
+    }
+
+    .sneaker-right{
+        position:absolute;
+        top:70px;
+        right:5%;
+        bottom:auto;
+    }
+
+    .sneaker-right img{
+        width:120px;
+        margin:0;
+        padding:5px;
+    }
+
+    .sneaker-sec button{
+        bottom:10px;
+        left:50%;
+        padding:9px 25px;
+        font-size:12px;
+    }
+
+
+    /* ================= SECOND BLACK LINE ================= */
+
+    .middle-line2{
+        top:2850px;
+        height:75px;
+    }
+
+    .middle-line2 h1{
+        line-height:75px;
+        font-size:14px;
+        letter-spacing:1px;
+    }
+
+    .middle-line2 .p1,
+    .middle-line2 .p2,
+    .middle-line2 .pp3,
+    .middle-line2 .p4{
+        display:none;
+    }
+
+
+    /* ================= NEWSLETTER ================= */
+
+    .newsletter-section{
+        position:absolute;
+        top:2940px;
+        left:50%;
+        transform:translateX(-50%);
+        width:92%;
+        max-width:none;
+        height:330px;
+        margin:0;
+        padding:40px 15px;
+        border-radius:12px;
+    }
+
+    .newsletter-container{
+        width:100%;
+    }
+
+    .newsletter-container h2{
+        font-size:24px;
+        margin-bottom:20px;
+        line-height:1.3;
+    }
+
+    .newsletter-container p{
+        font-size:11px;
+        margin:0 0 25px;
+        line-height:1.5;
+    }
+
+    .newsletter-form{
+        width:100%;
+        display:flex;
+        flex-direction:column;
+        gap:12px;
+    }
+
+    .newsletter-form input{
+        width:100%;
+        min-width:0;
+        padding:12px;
+    }
+
+    .newsletter-form button{
+        width:150px;
+        margin:auto;
+        padding:11px 15px;
+    }
+
+
+    /* ================= INSTAGRAM ================= */
+
+    section .insta{
+        position:absolute;
+        top:3350px;
+        left:50%;
+        transform:translateX(-50%);
+        width:100%;
+        text-align:center;
+    }
+
+    section .insta h1{
+        font-size:25px;
+        margin:0;
+        letter-spacing:2px;
+    }
+
+    section .insta .bran{
+        font-size:25px;
+        margin:5px 0 0;
+    }
+
+
+    /* ================= BLOG ================= */
+
+    .blog{
+        position:absolute;
+        top:3500px;
+        left:50%;
+        transform:translateX(-50%);
+        width:90%;
+        display:flex;
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:10px;
+    }
+
+    .blog div img{
+        width:120px;
+        height:120px;
+        border-radius:10px;
+    }
+
+
+    /* ================= FOOTER ================= */
+
+    .footer{
+        margin-top:3200px;
+        padding:40px 20px 0;
+    }
+
+    .footer-container{
+        display:grid;
+        grid-template-columns:1fr 1fr;
+        gap:30px 15px;
+    }
+
+    .footer-box{
+        width:100%;
+        min-width:0;
+        text-align:center;
+        margin:0;
+    }
+
+    .footer-box h2{
+        font-size:26px;
+    }
+
+    .footer-box h3{
+        font-size:15px;
+        margin:0 0 12px;
+    }
+
+    .footer-box ul li{
+        font-size:11px;
+        margin:0 0 7px;
+    }
+
+    .footer-box p{
+        font-size:10px;
+        margin:0 0 8px;
+    }
+
+    .footer-box h3,
+    .footer-box ul li,
+    .footer-box p{
+        margin-left:0;
+    }
+
+    .social{
+        display:flex;
+        justify-content:center;
+        gap:5px;
+        margin-top:10px;
+    }
+
+    .social i{
+        margin:0;
+        padding:7px;
+        font-size:13px;
+    }
+
+    .footer-bottom{
+        margin-top:30px;
+        padding:15px 0;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:10px;
+        text-align:center;
+        font-size:10px;
+    }
+
+    .footer-bottom .links{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:10px;
+    }
+
+    .footer-bottom .links span{
+        margin:0;
+    }
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+   ========================================================= */
+
+@media (max-width: 400px){
+
+    header{
+        height:470px;
+    }
+
+    header img{
+        width:105px;
+        height:105px;
+    }
+
+    .menu{
+        gap:10px;
+        font-size:8px;
+    }
+
+    .search-box{
+        width:90%;
+    }
+
+    .search-box input{
+        width:150px;
+    }
+
+    header p{
+        font-size:21px;
+    }
+
+    .model{
+        height:285px;
+    }
+
+    .square{
+        width:210px;
+        height:210px;
+    }
+
+    .brand,
+    .double-heading{
+        font-size:25px;
+    }
+
+    .heading{
+        font-size:24px;
+    }
+
+    .img1{
+        width:220px;
+    }
+
+    .para{
+        font-size:9px;
+    }
+
+    .sneaker-left img{
+        width:250px;
+    }
+
+    .sneaker-right img{
+        width:100px;
+    }
+
+    .sneaker-text h2{
+        font-size:15px;
+    }
+
+    .newsletter-container h2{
+        font-size:21px;
+    }
+
+    .footer-container{
+        grid-template-columns:1fr;
+    }
+
+    .footer-box{
+        padding-bottom:10px;
+    }
+}
+</style>
+<header>
+    <img src="images/logo.png" alt="Veloura Logo">
+    <div class="search-box">
+                <input type="text" placeholder="Search" class="search-input">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-cart-shopping cart" class="cart"></i> 
+    </div>      
+
+    
+     <div class="nav">
+        <div class="menu">
+            <a href="index.html.html">Home</a>
+            <a href="page2.html.html">Men</a>
+            <a href="page3.html.html">Women</a>
+            <a href="page4.html.html">Sneakers</a>
+        </div>
+
+    </div>
+    <section>
+        <p>VELOURA <br>LOOK BOOK</p>
+        </section>
+    </header>
+    <div class="square"></div>
+    <img src="images/header3.png" class="model">
+<div class="look">
+    <p>Explore the latest styles for women, men, <br> and sneakers—crafted for modern, everyday <br> fashion.</p>
+</div>
+
+<body>
+   <h1 class="brand">#VELOURA_BRAND</h1>
+   <h1 class="double-heading">MEN & WOMEN</h1>
+   <h1 class="heading">MADE WITH LOVE</h1>
+   <img src="images/model.png" alt="" class="img1">
+   <p class="para">In this project, we managed to find a middle ground between cool <br>
+design and good converstion rates. Research conducted on a live <br>
+site has shown that users are perfectly oriented in the interface <br>
+despite the non-standard design</p>
+<div class="middle-line">
+    <p class="p1">MADE WITH LOVE</p>
+    <p class="p2">MEN & WOMEN CLOTHING</p>
+ <h1>#VELOURA_BRAND</h1> 
+ <p class="pp3">MADE WITH LOVE</p>
+ <p class="p4">MEN & WOMEN CLOTHING</p>
+</div>
+<div class="square2"></div>
+<img src="images/model2.png" alt="" class="model2">
+<h1 class="about">About_ <br> BOUTIQUE</h1>
+<div class="us">
+    
+    <h1>WHO WE ARE</h1>
+    <p>Launched in 2019.Veloura Online <br>
+       Boutique offers a wide range of apparel <br>
+       to lit any women's & mens's unique sense <br>
+       of style. Our clothing and accessories <br>
+       are carefully crafted to provide our <br>
+       customers the latest fashions. </p>
+       <p class="para2">To keep our customers in the style we post <br>
+                        new arrivals daily, as well as offer stylist <br>
+                        picks to help any indecisive shopper. <br>
+                        <u>Veloura Online Boutique</u>is a fashionist's <br>
+                        best place to create the perfect <br>
+                        wardrobe</p>
+</div>
+<div class="brand-heading">
+    <h1 class="h12">MADE WITH LOVE</h1>
+   <h1 class="outline-text">MEN & WOMEN</h1>
+   <h1 class="h14">CLOTHING</h1> 
+</div>
+<section class="sneaker-sec">
+
+   
+    <div class="sneaker-left">
+        <img src="images/sneaker1.png" alt="">
+    </div>
+
+    
+    <div class="sneaker-text">
+        <h2>FELT LACE-UP SNEAKERS</h2>
+        <p>Contrasting materials. Pull-tab at the back and on the tongue.</p>
+    </div>
+
+    
+    <div class="sneaker-right">
+        <img src="images/sneaker2.png" alt="">
+    </div>
+<a href="page4.html.html"><button>View Details</button></a>
+</section>
+<div class="middle-line2">
+    <p class="p1">MADE WITH LOVE</p>
+    <p class="p2">MEN & WOMEN CLOTHING</p>
+ <h1>#VELOURA_BRAND</h1> 
+ <p class="pp3">MADE WITH LOVE</p>
+ <p class="p4">MEN & WOMEN CLOTHING</p>
+</div>
+<section class="newsletter-section">
+<div class="newsletter-container">
+        <h2>Subscribe to Our Newsletter</h2>
+        <p>Get the latest offers & updates directly in your inbox</p>
+        <div class="newsletter-form">
+            <input type="email" placeholder="Enter your email" class="newsletter-email">
+            <button class="newsletter-button">Subscribe <i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+</section>
+<footer class="footer">
+<div class="footer-container">
+
+    <div class="footer-box">
+        <h2>Veloura</h2>
+     
+    </div>
+
+   
+    <div class="footer-box">
+      <h3>Information</h3>
+      <ul>
+        <li>About Us</li>
+        <li>More Search</li>
+        <li>Blog</li>
+        <li>Testimonials</li>
+        <li>Events</li>
+      </ul>
+    </div>
+
+   
+    <div class="footer-box">
+      <h3>Helpful Links</h3>
+      <ul>
+        <li>Services</li>
+        <li>Supports</li>
+        <li>Terms & Condition</li>
+        <li>Privacy Policy</li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-box">
+      <h3>Our Services</h3>
+      <ul>
+        <li>Brands List</li>
+        <li>Order</li>
+        <li>Return & Exchange</li>
+        <li>Fashion List</li>
+        <li>Blog</li>
+      </ul>
+    </div>
+
+    
+    <div class="footer-box">
+      <h3>Contact Us</h3>
+      <p><i class="fa fa-phone"></i> +91 9999 999 999</p>
+      <p><i class="fa fa-envelope"></i> Veloura@gmail.com</p>
+
+      <div class="social">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-google-plus-g"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+
+  </div>
+
+ 
+  <div class="footer-bottom">
+    <p>2026 © company ltd. All right reserved</p>
+    <div class="links">
+      <span>FAQ</span>
+      <span>Privacy</span>
+      <span>Terms & Condition</span>
+    </div>
+  </div>
+</footer>
+</body>
+<script>
+    document.querySelector(".search-input").addEventListener("click", function () {
+    let value = document.querySelector(".search-input").value;
+
+    if (value === "") {
+        alert("Please type something to search");
+    } 
+    else if (value === "mens" || value === "men") {
+        window.location.href = "Veloura Men.html";
+    } 
+    else if (value === "womens" || value === "women") {
+        window.location.href = "Veloura women.html";
+    } 
+    else if (value === "sneakers" || value === "sneaker") {
+        window.location.href = "foot wear.html";
+    } 
+    else if (value === "home") {
+        window.location.href = "fashion designing.html";
+    } 
+    else {
+        alert("Search feature will be available very soon!");
+    }
+});
+    document.querySelector(".cart").addEventListener("click", function() {
+      alert("Your cart is currently empty!");
+    });
+   document.querySelector(".newsletter-button").addEventListener("click", function() {
+     let email = document.querySelector(".newsletter-email").value;
+     if(email === "") {
+       alert("Please enter your email to subscribe");
+     } else {
+       alert("Thank you for subscribing to our newsletter!");
+     }
+   });
+</script>
+</html>
